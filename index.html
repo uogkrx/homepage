@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://s2.loli.net/2024/03/17/rlo7OWxbUPIV1wi.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>安心的主页</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var listItems = [
+            { url: 'https://blog.anson.asia', img: 'img/png/no1.svg', text: '我的主博客' },
+            { url: 'https://blog.oxnn.cn', img: 'img/png/no2.svg', text: '我的二号博客' },
+            { url: 'https://eng.oxnn.cn', img: 'img/png/eng.svg', text: '我的英文博客' },
+            { url: 'mailto:service@anson.fun', img: 'img/png/mail.svg', text: '邮箱联系我' },
+            { url: 'https://blog.anson.asia/about', img: 'img/png/my.svg', text: '联系我' },
+            { url: 'https://blog.anson.asia/links/', img: 'img/png/link.svg', text: '友情链接' },
+            { url: 'https://blog.oxnn.cn/2/', img: 'img/png/shop.svg', text: '安心的商店' },
+
+        ];
+
+
+        listItems.forEach(function(item) {
+            $('#app ul').append('<li><a href="' + item.url + '" target="_blank"><img class="shake" src="' + item.img + '" width="112" height="112" style="padding-left: 8px;padding-top: 8px;padding-right: 8px;padding-bottom: 8px;border-radius: 30px;"/><strong>' + item.text + '</strong></a></li>');
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="logo">
+            <img class="logo" src="https://s2.loli.net/2024/03/18/qWmPAHUN2EeKxcr.png" style="border-radius: 30px;">
+        </div>
+        <div id="app" class="app animated fadeInLeft">
+            <ul>
+                <!-- List items will be inserted here -->
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-contents">
+            <div class="links">
+                <div class="line">
+                    <li>
+                        <a href="https://icp.gov.moe/?keyword=20241008" target="_blank">萌ICP备20241008号</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
